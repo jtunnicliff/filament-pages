@@ -94,10 +94,13 @@ abstract class PluginServiceProvider extends PackageServiceProvider
 
         foreach ($this->getResources() as $resource) {
             foreach ($resource::getPages() as $page) {
-                $className = $page->getClass(); // Adjust this based on the actual structure
-
-                // Assuming there is a method or property called 'getName'
-                Livewire::component($className::getName(), $className);
+                if (method_exists($className, 'getName')) {
+                    Livewire::component($className::getName(), $className);
+                } else {
+                    // Handle the case when 'getName' method is not available
+                    // You might need to adjust this based on your actual scenario
+                    Livewire::component($className, $className);
+                }
             }
 
             foreach ($resource::getRelations() as $relation) {
