@@ -1,15 +1,15 @@
 {
-    "name": "ahmedababakr/filament-pages",
+    "name": "jtunnicliff/filament-pages",
     "description": "Highly opinionated Pages for filament",
     "keywords": [
         "filament",
         "laravel",
         "filament-pages"
     ],
-    "homepage": "https://github.com/AhmedAbabakr/filament-pages",
+    "homepage": "https://github.com/jtunnicliff/filament-pages",
     "support": {
-        "issues": "https://github.com/AhmedAbabakr/filament-pages/issues",
-        "source": "https://github.com/AhmedAbabakr/filament-pages"
+        "issues": "https://github.com/jtunnicliff/filament-pages/issues",
+        "source": "https://github.com/jtunnicliff/filament-pages"
     },
     "license": "MIT",
     "authors": [
@@ -20,13 +20,11 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "filament/filament": "^3.0",
-        "spatie/laravel-package-tools": "^1.13.5",
-        "illuminate/contracts": "^9.0 || ^10.0"
+        "spatie/laravel-package-tools": "^1.13.5"
     },
     "require-dev": {
-        "nunomaduro/collision": "^6.0",
         "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
